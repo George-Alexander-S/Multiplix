@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="515.0" style="-fx-background-color: #708090;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gange.HelloController">
+   <children>
+      <Button layoutX="25.0" layoutY="112.0" mnemonicParsing="false" onAction="#nyOppgave" prefHeight="32.0" prefWidth="109.0" text="Ny oppgave">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Text layoutX="98.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplikatorspillet!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="25.0" layoutY="351.0" mnemonicParsing="false" onAction="#nullstill" prefHeight="35.0" prefWidth="109.0" text="Restart">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="lblOppgave" alignment="CENTER" layoutX="152.0" layoutY="112.0" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #907080;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="444.0" layoutY="111.0" mnemonicParsing="false" onAction="#svar" text="Svar">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <TextField fx:id="txtSvar" layoutX="340.0" layoutY="116.0" onAction="#onEnter" prefHeight="25.0" prefWidth="92.0" promptText="Skriv svaret ditt her" />
+      <Label fx:id="lblResultat" alignment="CENTER" graphicTextGap="2.0" layoutX="173.0" layoutY="162.0" prefHeight="27.0" prefWidth="242.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAntallRett" layoutX="251.0" layoutY="211.0" prefHeight="17.0" prefWidth="57.0" style="-fx-background-color: #707090;">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAntallFeil" layoutX="251.0" layoutY="252.0" prefHeight="17.0" prefWidth="57.0" style="-fx-background-color: #707090;">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblRettProsent" layoutX="322.0" layoutY="211.0" prefHeight="17.0" prefWidth="57.0" style="-fx-background-color: #707090;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblFeilProsent" layoutX="322.0" layoutY="252.0" prefHeight="17.0" prefWidth="57.0" style="-fx-background-color: #707090;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Text layoutX="135.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antall rett:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="134.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antall feil: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
